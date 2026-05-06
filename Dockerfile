@@ -36,4 +36,4 @@ RUN npm install
 ENTRYPOINT ["npm", "run"]
 
 # CMD can be overwritten by docker run [...args]
-CMD ["watch-web"]
+CMD ["watch"]

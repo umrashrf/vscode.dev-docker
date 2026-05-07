@@ -32,5 +32,10 @@ RUN echo "export PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH" >> $HOME/
 
 RUN npm install
 
+EXPOSE 8080
+
 # ENTRYPOINT can not be overwritten
 ENTRYPOINT ["./scripts/code-server.sh"]
+
+# CMD can be overwritten
+CMD ["--host", "0.0.0.0", "--port", "8080"]

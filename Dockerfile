@@ -33,7 +33,4 @@ RUN echo "export PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH" >> $HOME/
 RUN npm install
 
 # ENTRYPOINT can not be overwritten
-ENTRYPOINT ["npm", "run"]
-
-# CMD can be overwritten by docker run [...args]
-CMD ["watch"]
+ENTRYPOINT ["./scripts/code-server.sh"]

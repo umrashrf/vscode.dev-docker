@@ -8,7 +8,7 @@ Run vscode.dev locally, on-prem or on your cloud
 
 ## Run
 
-    docker run -it --rm --memory="6gb" $USER/vscode.dev-amd64:latest
+    docker run -it --rm --memory="6gb" -p 8080:8080 $USER/vscode.dev-amd64:latest
 
 ## Prebuilt Images
 

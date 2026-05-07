@@ -6,6 +6,6 @@
 
     docker run -it --rm vscode.dev-amd64:latest
 
-# Prebuilt Images
+## Prebuilt Images
 
-https://hub.docker.com/repository/docker/umrashrf/vscode.dev-arm64/general
+https://hub.docker.com/repository/docker/umrashrf/vscode.dev-amd64/general
